@@ -6,9 +6,9 @@ function setup() {
    function draw() {
     background(0);
     translate(width / 2, height / 2); // Center the origin
-    stroke(255, 100, 100);
+    
     noFill();
-    //changeColor();
+    changeColor();
  
 
     //scale(100);
