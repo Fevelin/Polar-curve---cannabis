@@ -1,3 +1,16 @@
+//select element for user to change between shapes
+const selectElement = document.getElementById("shape-displayed");
+//store currently sidplay shape - intial is shape circle
+let shapeDisplayed = "cannabis";
+//store if shape has recently changed
+let shapeChanged = false;
+
+selectElement.onchange = (event) => {
+    shapeDisplayed = event.target.value;
+    console.log(shapeDisplayed);
+    shapeChanged = true;
+
+}
 function setup() {
     createCanvas(windowWidth, windowHeight);
     angleMode(RADIANS); // Use radians for angles
@@ -29,4 +42,3 @@ function setup() {
     }
     endShape();
    }
-   
