@@ -17,11 +17,11 @@ function setup() {
    }
    
    function draw() {
-    background(0);
+    //background(0);
     translate(width / 2, height / 2); // Center the origin
     
     noFill();
-    changeColor();
+    //changeColor();
  
 
     //scale(100);
