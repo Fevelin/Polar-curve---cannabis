@@ -1,8 +1,4 @@
-const colorButton = document.getElementById("color-changing-buttons");
 
-colorButton.onclick = () => {
-changeColor();
-}
 
 /**
  * function triggered every time user scrolls
@@ -10,18 +6,14 @@ changeColor();
  */
 function mouseWheel(event) {
     const deltaWheel = event.delta * 0.5;
-    setSize(-event.deltaY / 100)
     
-
-    changeColor();
-    var angle = map(mouseX,0,width, -90, 90);
-    var r = 100;
-
     //delta means increment 
     //- if the user is scrolling quickly it will be higher
 
     current_size = current_size + deltaWheel * 0.06;
+
+    changeColor();
     
 }
-
+ 
 
