@@ -48,7 +48,7 @@ function changeColor() {
     const g = random(255);
     const b = random(255);
 
-    fill(r, g, b, 100);
+    fill(r, g, b, 50);
 }
 
 function setup() {
